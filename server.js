@@ -6,9 +6,17 @@
 var http = require("http");
 // console.log(http);
 var server = http.createServer(function(request, response){
-	console.log(request);
+	// console.log(request);
+	// Write a header for a 200 response (OKAY)
+	response.writeHead(418,{
+		'content-type': 'text/html'
+	});
+	response.write("<h1>Hello, visitor. This is YOUR node server.</h1>");
+	response.end();
 });
 
 // server is created above. It came fromo htt object, the createServer method.
 // It includes a request and response in the callback, but ALSO has a listen method.
+// The function will only run if someone makes a request on port 8000 (listening for request)
 server.listen(8000);
+console.log("NodeJS is listening for connections on port 8000...");

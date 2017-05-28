@@ -1,0 +1,88 @@
+*{
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+	/* background-color: black; */
+	background-image: url("https://i.ytimg.com/vi/8KTfbWzCV-U/maxresdefault.jpg");
+    background-attachment: fixed;
+}
+
+img{
+	max-width: 50%;
+	float: left;
+	/* height: 250px; */
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/* padding: 5px; */
+	border: 2px solid black;
+}
+
+.header-section{
+	background-color: white;
+	border: 10px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+h1{
+	font-family: 'Diplomata', cursive;
+	font-size: 48px;
+	color: #DAB806;
+}
+
+input{
+	height: 35px;
+	width: 350px;
+}
+
+#user-search{
+	color: #DAB806;
+}
+
+.genre-button, #all-genres{
+	margin: 5px;
+}
+
+#search-container{
+	margin: 20px;
+}
+
+.movie-card{
+	position: relative;
+	border: 2px solid black;
+	margin: 30px;
+	width: 500px;
+	height: 450px;
+	background-color: #f7e8a0;
+}
+
+.movie-card:hover{
+	background-color: lightgray;
+}
+
+.movie-text{
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	text-align: justify;
+	width: 240px;
+    height: 350px;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DAB806;
+  border: 0px none white;
+  border-radius: 50px;
+}
+
+.modal-details{
+	margin-bottom: 20px;
+}
